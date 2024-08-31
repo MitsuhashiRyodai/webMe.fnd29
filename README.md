@@ -1,11 +1,12 @@
 # ページ構成
+* TopPage
+* BeatBox
+* DrumKit(未完成)
 
 ## Top Page
 
-* 選択肢
 * BeatBox
 * Drumkit
-* 画像解析
 
 ## BeatBox
 
