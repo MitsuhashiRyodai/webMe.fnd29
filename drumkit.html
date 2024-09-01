@@ -17,14 +17,20 @@
 <body>
   <header>
     <span>
-      <a><img srv="digLogo.png"></a>
+      <div id="digLogo">
+        <a><img srv="digLogo.png"></a>
+      </div>
     </span>
-    <span>
-      Digital
-      <br>Innovation
-      <br>Garage
-    </span>
+    <div>
+      <span class="digName">
+        Digital
+        <br>Innovation
+        <br>Garage
+      </span>
+    </div>
+    <div>
     <span><h2>WebApp:Drum-Kit</h2></span>
+    </div>
   </header>  
   <br>
   <!-- ナビゲーションバー -->
@@ -103,14 +109,15 @@
   <!-- player Setting -->
     <div class="player">
       <div class="btn">
-      <button id="start">▶</button>
-      <button id="stop">■</button>
-      <button id="rec">●</button>
+        <button id="start">▶</button>
+        <button id="stop">■</button>
+        <button id="rec">●</button>
       </div>
       <div id="bpm">
         <span>
           <samp>BPM:</samp>
-          <input type="text" width="50px" height="25px">
+          <br>
+          <input id="tempo" type="text" width="50px" height="25px" value="90">
         </span>
       </div>
       <span></span>
