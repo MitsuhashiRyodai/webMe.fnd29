@@ -2,25 +2,15 @@
 /* .nav {
   border-bottom: 1px #24140e ;
 } */
-/* #theme-color{
+body{
   background-color: #97cccc;
 }
+
 .headerTab{
   background-color: #afeeee ;
   border-bottom: 5px double #ceafed ;
   margin: auto;
   text-align: center;
 
-} */
-
-/* BeatBox Style */
-.bpm {
-  width: 25px;
-  height: 15px;
 }
 
-.mode{
-  width: 100x;
-  height: 25px;
-
-}
