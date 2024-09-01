@@ -1,8 +1,3 @@
-/* default page style */
-
-#theme-color{
-  background-color: #97cccc;
-}
 
 /* DrumKitStyle */
 .drumKit{
@@ -27,7 +22,7 @@
   padding: auto;
 }
 
-.symbal :active{
+.symbal:active{
   background-color: #6663377c;
 }
 
@@ -36,6 +31,7 @@
   height: 105px;
   left: 100px;
 }
+
 
 #clash2 {
   width: 115px;
@@ -65,8 +61,8 @@
   align-items: center;
 }
 
-.taiko :active{
-  background-color: #857d83;
+.taiko:active{
+  background-color: #6663377c;
 }
 
 #snare {
@@ -151,7 +147,9 @@
   vertical-align: middle;
   align-items: center;
   text-align: center;
+  /* animation: ; */
 }
+
 
 .hihatCahnnel{
   margin:auto;
