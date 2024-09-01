@@ -236,10 +236,13 @@ function playBeat(num){
   {
     if(num === hihatBox.length){
       num = 0;
+      return playBeat(num);
     }else if(num < hihatBox.length){
       num = num + 1;
+      return playBeat(num);
     }else{
       num = 0;
+      return playBeat(num);
     }
   }
 }
@@ -254,7 +257,7 @@ function playLoop(){
 
   let beatLoop;
   if (!beatLoop) {
-   beatLoop = setInterval(playBeat(num),tempo);
+   beatLoop = setInterval(playBeat(num),1000);
   }
 }
 
@@ -267,8 +270,8 @@ function stopBeat(){
 
 let startBtn = document.getElementById("start");
 let stopBtn  = document.getElementById("stop");
-startBtn.addEventListener("click", playLoop(),false);
-stopBtn.addEventListener("click", stopBeat(),false);
+startBtn.addEventListener("click", playLoop,false);
+stopBtn.addEventListener("click", stopBeat,false);
 
 // noteOn/Off
 function noteSwitch(){
