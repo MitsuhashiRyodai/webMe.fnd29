@@ -121,8 +121,48 @@
 }
 
 #bpm {
-  width: 100px;
+  width: 120px;
   height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#tempo{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.rhythm{
+  width: auto;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.rhythmNumber{
+  width: 60px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.preset{
+  width: 250px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  position:left;
+}
+
+.presetMode{
+  width: 130px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  position:left;
 }
 
 /* BeatBox Style */
@@ -148,6 +188,14 @@
   align-items: center;
   text-align: center;
   /* animation: ; */
+}
+
+.noteBox input:checked+label{
+  background-color: aquamarine;
+}
+
+.beatCount{
+  overflow-x: scroll;
 }
 
 
