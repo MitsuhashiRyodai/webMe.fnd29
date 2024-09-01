@@ -19,20 +19,27 @@
 .symbal{
   display: inline-block;
   background-color: #fff352;
+  /* background-color: #6663377c; */
   border-radius: 50%;
   border: 2px solid rgb(128, 112, 91);
   text-align: center;
-  
+  vertical-align: middle;
+  padding: auto;
+}
+
+.symbal :active{
+  background-color: #6663377c;
 }
 
 #clash1 {
-  width: 80px;
-  height: 80px;
+  width: 105px;
+  height: 105px;
+  left: 100px;
 }
 
 #clash2 {
-  width: 80px;
-  height: 80px;
+  width: 115px;
+  height: 115px;
 }
 
 
@@ -49,11 +56,17 @@
 /*TaikoColor*/
 .taiko {
   display: inline-block;
-  background-color: #ddd8dc;
+  background-color: #f0f1dc;
   border-radius: 50%;
   border: 2px solid #24140e;
   padding: 2px;
   text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.taiko :active{
+  background-color: #857d83;
 }
 
 #snare {
@@ -87,27 +100,33 @@
 .player{
   margin: auto;
   width: 800px;
-  height: 20px;
+  height: 50px;
   display: flex;
   padding: 20px 35px;
   display: flex;
 }
 
-.start{
-  width: 25px;
+#start{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
 }
 
-.stop{
-  width: 25px;
+#stop{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
 }
 
-.rec{
-  width: 25px;
+#rec{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
 }
 
-.bpm {
-  width: 50px;
-  height: 10px;
+#bpm {
+  width: 100px;
+  height: 40px;
 }
 
 /* BeatBox Style */
@@ -118,40 +137,41 @@
   background-color: aliceblue;
   flex-flow:column ;
   padding: 20px 35px;
-
-}
-.hihatCahnnel{
-  width: auto;
+  display: flex;
+  vertical-align: middle;
 }
 
 .noteBox {
-  display: inline-block;
-  border-radius: 2%;
+  display: inline-flex;
+  border-radius: 10%;
   border: 1px solid #24140e;
-  text-align: center;
-  width: auto;
+  width: 20px;
   height: 40px;
-}
-
-
-/* footter */
-.footer{
-  border-top: 2px #24140e;
-}
-
-#endTab{
-  margin: auto;
-  width: auto;
-  font-weight: 100;
+  max-width: 100%;
+  vertical-align: middle;
+  align-items: center;
   text-align: center;
-  font-size: 12px;
-  color: #24140e86;
 }
 
-#creater{
-  margin: auto;
+.hihatCahnnel{
+  margin:auto;
   width: auto;
-  text-align: center;
-  font-size: 5px;
-  color: #b8b8b894;
+  height: 100px;
+  display: inline-flex;
 }
+
+#hihatName{
+  vertical-align: middle;
+}
+
+.snareCahnnel{
+  width: 100px;
+  height: 100px;
+}
+
+.bassCahnnel{
+  width: 100px;
+  height: 100px;
+}
+
+
