@@ -7,22 +7,20 @@
  */
 
 function clash1(){
-	// 初回以外だったら音声ファイルを巻き戻す
-  let clash1Style = document.getElementById("clash1").style;
-  clash1Style["backgroundColor"]="#6663377c";
+  // 初回以外だったら音声ファイルを巻き戻す
   let clash1Play = document.getElementsByClassName("clash1Play")[0];
-	if( typeof( clash1Play.currentTime ) != 'undefined' )
+  if( typeof( clash1Play.currentTime ) != 'undefined' )
     {
       clash1Play.currentTime = 0;
     }
+
   clash1Play.play();
-  clash1Style["backgroundColor"]="#fff352";
   console.log("clickSymbal1");
 }
 
 function clash2(){
 	// 初回以外だったら音声ファイルを巻き戻す
-  let clash2Play = document.getElementsByClassName("clash1Play")[0];
+  let clash2Play = document.getElementsByClassName("clash2Play")[0];
 	if( typeof( clash2Play.currentTime ) != 'undefined' )
     {
       clash2Play.currentTime = 0;
@@ -117,12 +115,26 @@ function floor(){
   console.log("clickFloor");
 }
 
+/**
+ * キーボード入力での音声再生
+ */
+
 
 let durmKey =document.addEventListener("keydown", (event) => {  
+  const symbalColor ="#fff352";
+  const attackColor ="#6663377c";
+  const taikoColor ="#f0f1dc";
+  let clash1Style =document.getElementsByClassName("symbal")[0].style.backgroundColor ;
+  let clash2Style =document.getElementsByClassName("symbal")[1].style.backgroundColor ;
+  let hihatStyle =document.getElementsByClassName("symbal")[2].style.backgroundColor ;
+  let rideStyle =document.getElementsByClassName("symbal")[3].style.backgroundColor ;
+
   switch (event.key){
     case "h":
+      hihatStyle = attackColor;
       hihat();
-    break;
+      hihatStyle = symbalColor;
+      break;
 
     case "r":
       clash1();
@@ -190,6 +202,8 @@ let durmKey =document.addEventListener("keydown", (event) => {
  * 再生ボタンをおした際に、有効化したノードの部分だけ音声がなる状態でループ再生される。
  * ループ再生の際、DrumKitも連動して表示が変わる。
  */
+
+
 let hihatBox = [];
 hihatBox = document.getElementsByName("hihatNote");
 console.log(hihatBox);
@@ -202,4 +216,67 @@ let bassBox = [];
 bassBox = document.getElementsByName("bassNote");
 console.log(bassBox);
 
-// document.addEventListener(, (event) => {  
+
+
+function playBeat(num){
+  num = 0;
+  console.log(num);
+  // console.log(num + 1 + "回目");
+  if (hihatBox[num].innerText === "1"){
+      hihatBox[num].onclick();
+  }
+  if (snareBox[num].innerText === "1"){
+    snareBox[num].onclick();
+  }
+  if (bassBox[num].innerText === "1"){
+    bassBox[num].onclick();
+  }
+
+  if(typeof num !== "number")
+  {
+    if(num === hihatBox.length){
+      num = 0;
+    }else if(num < hihatBox.length){
+      num = num + 1;
+    }else{
+      num = 0;
+    }
+  }
+}
+
+function playLoop(){
+  let tempo = 60 /document.getElementById("tempo").value;
+  console.log(tempo);
+
+  let num = 0;
+  console.log(num);
+  console.log("start");
+
+  let beatLoop;
+  if (!beatLoop) {
+   beatLoop = setInterval(playBeat(num),tempo);
+  }
+}
+
+
+function stopBeat(){
+  clearInterval(beatLoop);
+  beatLoop = null;
+  console.log("stop");
+}
+
+let startBtn = document.getElementById("start");
+let stopBtn  = document.getElementById("stop");
+startBtn.addEventListener("click", playLoop(),false);
+stopBtn.addEventListener("click", stopBeat(),false);
+
+// noteOn/Off
+function noteSwitch(){
+
+  for(const h  in hihatBox){
+    console.log(h);
+  }
+}
+
+let noteOn = document.getElementsByClassName("noteBox");
+noteOn.addEventListener("click",noteSwitch(),false);
