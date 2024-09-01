@@ -1,17 +1,22 @@
 'use strict'
 // 関数レベルの厳格モード構文
 
-let play = document.getElementsByClassName("play");
+/**
+ * DrumKit PlayCommand
+ * マウスクリックもしくはキーボード入力で音声がなる仕組み
+ */
 
 function clash1(){
 	// 初回以外だったら音声ファイルを巻き戻す
+  let clash1Style = document.getElementById("clash1").style;
+  clash1Style["backgroundColor"]="#6663377c";
   let clash1Play = document.getElementsByClassName("clash1Play")[0];
 	if( typeof( clash1Play.currentTime ) != 'undefined' )
     {
       clash1Play.currentTime = 0;
     }
-
   clash1Play.play();
+  clash1Style["backgroundColor"]="#fff352";
   console.log("clickSymbal1");
 }
 
@@ -155,12 +160,16 @@ let durmKey =document.addEventListener("keydown", (event) => {
       tom2();
     break;
 
-    case "m":
-      floor();r
+    case "b":
+      floor();
     break;
 
     case "m":
       floor();
+    break;
+
+    case " ":
+      kick();
     break;
 
     case "e":
@@ -169,7 +178,28 @@ let durmKey =document.addEventListener("keydown", (event) => {
 
     default:
       console.log(event.key);
-    console.log("readyEvent")
+      console.log("No Attached Sound")
   }
-  
 })
+
+
+/**
+ * BeatBox用処理
+ * 各音声ノードをクリックしたら、音声がなる。
+ * クリックした際に、色が変わり、有効かどうかのon/offを切り替えられる。
+ * 再生ボタンをおした際に、有効化したノードの部分だけ音声がなる状態でループ再生される。
+ * ループ再生の際、DrumKitも連動して表示が変わる。
+ */
+let hihatBox = [];
+hihatBox = document.getElementsByName("hihatNote");
+console.log(hihatBox);
+
+let snareBox = [];
+snareBox = document.getElementsByName("snareNote");
+console.log(snareBox);
+
+let bassBox = [];
+bassBox = document.getElementsByName("bassNote");
+console.log(bassBox);
+
+// document.addEventListener(, (event) => {  
