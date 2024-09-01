@@ -1,6 +1,6 @@
 # ページ構成（理想）
 
-![pageLayout]( "pageLayout")
+![pageLayout](https://github.com/MitsuhashiRyodai/webMe.fnd29/blob/main/pageLayoutDrumSet.jpg "pageLayout")
 
 ## DrumSet
 
