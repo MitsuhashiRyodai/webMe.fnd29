@@ -18,7 +18,7 @@
   <header>
     <span>
       <div id="digLogo">
-        <a><img srv="digLogo.png"></a>
+        <a><img srv="keyPlay\digLogo.png"></a>
       </div>
     </span>
     <div>
@@ -109,30 +109,27 @@
   <!-- player Setting -->
     <div class="player">
       <div class="btn">
-        <button id="start">▶</button>
-        <button id="stop">■</button>
-        <button id="rec">●</button>
+        <button id="start" type="button" onclick="playBeat();"><span>▶<img href="start.pamg"></span></button>
+        <button id="stop" type="button">■</button>
+        <button id="rec" type="button">●</button>
       </div>
       <div id="bpm">
         <span>
-          <samp>BPM:</samp>
-          <br>
+          <span><samp>BPM:</samp></span>
           <input id="tempo" type="text" width="50px" height="25px" value="90">
         </span>
       </div>
-      <span></span>
-      <div class="patarn">
-        <samp>Patarn:</samp>
-        <select class="patarnNumber">
+      <div class="rhythm">
+        <span><samp>rhythm:</samp></span>
+        <select class="rhythmNumber">
           <option value="1">4/4</option>
           <option value="2">3/4</option>
           <option value="3">8/8</option>
         </select>
       </div>
-      <span></span>
       <div class="preset">
-        <samp>Patarn:</samp>
-        <select>
+        <span><samp>Patarn:</samp></span>
+        <select class="presetMode">
           <option>Standert</option>
           <option>Rock</option>
           <option>Funk</option>
@@ -145,41 +142,71 @@
       <div class="beatCount" id="hihatChannel">
         <span id="hihatName">
           Hihat:
-          <span class="noteBox" name="hihatNote" id="hi0" onclick="hihat();" count="0">1</span>
-          <span class="noteBox" name="hihatNote" id="hi1" onclick="hihat();" count="1"></span>
-          <span class="noteBox" name="hihatNote" id="hi2" onclick="hihat();" count="2"></span>
-          <span class="noteBox" name="hihatNote" id="hi3" onclick="hihat();" count="3"></span>
-          <span class="noteBox" name="hihatNote" id="hi4" onclick="hihat();" count="4">2</span>
-          <span class="noteBox" name="hihatNote" id="hi5" onclick="hihat();" count="5"></span>
-          <span class="noteBox" name="hihatNote" id="hi6" onclick="hihat();" count="6"></span>
-          <span class="noteBox" name="hihatNote" id="hi7" onclick="hihat();" count="7"></span>
+          <div class="hihatNote">
+            <span class="noteBox" name="hihatNote" id="hi0" onclick="hihat();" count="0" values="1">1</span>
+            <span class="noteBox" name="hihatNote" id="hi1" onclick="hihat();" count="1" values="0">0</span>
+            <span class="noteBox" name="hihatNote" id="hi2" onclick="hihat();" count="2" values="1">1</span>
+            <span class="noteBox" name="hihatNote" id="hi3" onclick="hihat();" count="3" values="0">0</span>
+            <span class="noteBox" name="hihatNote" id="hi4" onclick="hihat();" count="4" values="1">1</span>
+            <span class="noteBox" name="hihatNote" id="hi5" onclick="hihat();" count="5" values="0">0</span>
+            <span class="noteBox" name="hihatNote" id="hi6" onclick="hihat();" count="6" values="1">1</span>
+            <span class="noteBox" name="hihatNote" id="hi7" onclick="hihat();" count="7" values="0">0</span>
+            <span class="noteBox" name="hihatNote" id="hi8" onclick="hihat();" count="0" values="1">1</span>
+            <span class="noteBox" name="hihatNote" id="hi9" onclick="hihat();" count="1" values="0">0</span>
+            <span class="noteBox" name="hihatNote" id="hi10" onclick="hihat();" count="2" values="1">1</span>
+            <span class="noteBox" name="hihatNote" id="hi11" onclick="hihat();" count="3" values="0">0</span>
+            <span class="noteBox" name="hihatNote" id="hi12" onclick="hihat();" count="4" values="1">1</span>
+            <span class="noteBox" name="hihatNote" id="hi13" onclick="hihat();" count="5" values="0">0</span>
+            <span class="noteBox" name="hihatNote" id="hi14" onclick="hihat();" count="6" values="1">1</span>
+            <span class="noteBox" name="hihatNote" id="hi15" onclick="hihat();" count="7" values="0">0</span>
+          </div>
         </span>
       </div>
 
       <br><div class="beatCount" id="snareChannel">
         <span id="snareName">
           Snare:
-          <span class="noteBox" name="snareNote" id="Sn0" onclick="snare();" count="0">1</span>
-          <span class="noteBox" name="snareNote" id="Sn1" onclick="snare();" count="1"></span>
-          <span class="noteBox" name="snareNote" id="Sn2" onclick="snare();" count="2"></span>
-          <span class="noteBox" name="snareNote" id="Sn3" onclick="snare();" count="3"></span>
-          <span class="noteBox" name="snareNote" id="Sn4" onclick="snare();" count="4">2</span>
-          <span class="noteBox" name="snareNote" id="Sn5" onclick="snare();" count="5"></span>
-          <span class="noteBox" name="snareNote" id="Sn6" onclick="snare();" count="6"></span>
-          <span class="noteBox" name="snareNote" id="Sn7" onclick="snare();" count="7"></span>
+          <div class="snareNote">
+            <span class="noteBox" name="snareNote" id="Sn0" onclick="snare();" count="0" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn1" onclick="snare();" count="1" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn2" onclick="snare();" count="2" values="1">1</span>
+            <span class="noteBox" name="snareNote" id="Sn3" onclick="snare();" count="3" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn4" onclick="snare();" count="4" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn5" onclick="snare();" count="5" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn6" onclick="snare();" count="6" values="1">1</span>
+            <span class="noteBox" name="snareNote" id="Sn7" onclick="snare();" count="7" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn8" onclick="snare();" count="0" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn9" onclick="snare();" count="1" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn10" onclick="snare();" count="2" values="1">1</span>
+            <span class="noteBox" name="snareNote" id="Sn11" onclick="snare();" count="3" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn12" onclick="snare();" count="4" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn13" onclick="snare();" count="5" values="0">0</span>
+            <span class="noteBox" name="snareNote" id="Sn14" onclick="snare();" count="6" values="1">1</span>
+            <span class="noteBox" name="snareNote" id="Sn15" onclick="snare();" count="7" values="0">0</span>
+          </div>
         </span>
       </div>
       <br><div class="beatCount" id="bassChannel">
         <span id="bassName">
           Bass:
-          <span class="noteBox" name="bassNote" id="ba0" onclick="kick();" count="0">1</span>
-          <span class="noteBox" name="bassNote" id="ba1" onclick="kick();" count="1"></span>
-          <span class="noteBox" name="bassNote" id="ba2" onclick="kick();" count="2"></span>
-          <span class="noteBox" name="bassNote" id="ba3" onclick="kick();" count="3"></span>
-          <span class="noteBox" name="bassNote" id="ba4" onclick="kick();" count="4">2</span>
-          <span class="noteBox" name="bassNote" id="ba5" onclick="kick();" count="5"></span>
-          <span class="noteBox" name="bassNote" id="ba6" onclick="kick();" count="6"></span>
-          <span class="noteBox" name="bassNote" id="ba7" onclick="kick();" count="7"></span>
+          <div class="bassNote"></div>
+            <span class="noteBox" name="bassNote" id="ba0" onclick="kick();" count="0" values="1">1</span>
+            <span class="noteBox" name="bassNote" id="ba1" onclick="kick();" count="1" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba2" onclick="kick();" count="2" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba3" onclick="kick();" count="3" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba4" onclick="kick();" count="4" values="1">1</span>
+            <span class="noteBox" name="bassNote" id="ba5" onclick="kick();" count="5" values="1">1</span>
+            <span class="noteBox" name="bassNote" id="ba6" onclick="kick();" count="6" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba7" onclick="kick();" count="7" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba8" onclick="kick();" count="0" values="1">1</span>
+            <span class="noteBox" name="bassNote" id="ba9" onclick="kick();" count="1" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba10" onclick="kick();" count="2" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba11" onclick="kick();" count="3" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba12" onclick="kick();" count="4" values="1">1</span>
+            <span class="noteBox" name="bassNote" id="ba13" onclick="kick();" count="5" values="1">1</span>
+            <span class="noteBox" name="bassNote" id="ba14" onclick="kick();" count="6" values="0">0</span>
+            <span class="noteBox" name="bassNote" id="ba15" onclick="kick();" count="7" values="0">0</span>
+        </div>
         </span>
 
       </div>
