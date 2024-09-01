@@ -15,44 +15,36 @@
   
 
 <body>
-    
   <header>
+      <img id="digLogo" scr="digLogo.png">
     <h1>
-      WebMe:趣味の部屋
+        WebMe:趣味の部屋
     </h1>
-    <!-- ナビゲーションバー -->
-    <nav class="headerTab">
-        <a href="index.html">Top</a>
-        <a href="beatbox.html">beatBox</a>
-        <a href="drumkit.html">DrumKit</a>
-    </nav>
-  </header>
-
+  </header>  
+  <br>
+  <!-- ナビゲーションバー -->
+  <nav class="headerTab">
+      <a href="index.html">Top</a>
+      <!-- <a href="beatbox.html">beatBox</a> -->
+      <a href="drumkit.html">DrumKit</a>
+  </nav>
+  <br>
   <main>
-    <div class="kit">
-      <a class="clach1" onclick="clash1();">clash1
+    <!-- DrumKit -->
+    <div class="drumKit">
+      <a class="clash1" onclick="clash1();">clash1
         <samp>press:w</samp>
         <audio class="clash1Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_cymbal.mp3"></audio>
       </a>
 
-      <a class="clach2" onclick="clash2();">clash2
+      <a class="clash2" onclick="clash2();">clash2
         <samp>press:o</samp>
         <audio class="clash2Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_cymbal.mp3"></audio>
       </a>
-
+    <p></p>
       <a class="hihat" onclick="hihat();">hihat
         <samp>press:h</samp>
         <audio class="hihatPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_hat.mp3"></audio>
-      </a>
-
-      <a class="kick" onclick="kick();">kick
-        <samp>press:space</samp>
-        <audio class="kickPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_kick.mp3"></audio>
-      </a>
-
-      <a class="snare" onclick="snare();">snare
-        <samp>press:f</samp>
-        <audio class="snarePlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_snare.mp3"></audio>
       </a>
 
       <a class="tom1" onclick="tom1();">tom1
@@ -64,18 +56,33 @@
         <samp>press:g or h</samp>
         <audio class="tom2Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom2.mp3"></audio>
       </a>
+      
+      <a class="ride" onclick="ride();">ride
+        <samp>press:o</samp>
+        <audio class="ridePlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_ride.mp3"></audio>
+      </a>
+
+    <p></p>
+      <a class="kick" onclick="kick();">kick
+        <samp>press:space</samp>
+        <audio class="kickPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_kick.mp3"></audio>
+      </a>
+
+      <a class="snare" onclick="snare();">snare
+        <samp>press:f</samp>
+        <audio class="snarePlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_snare.mp3"></audio>
+      </a>
+
 
       <a class="floor" onclick="floor();">floor
         <samp>press:v or n</samp>
         <audio class="floorPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom3.mp3"></audio>
       </a>
-
-
       
     </div>
 
     <!--別のやり方_svg要素  -->
-<!--     
+    <!--     
       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <a onclick="hat();">      
           <audio class="hat" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_hat.mp3"></audio>
@@ -87,16 +94,50 @@
         <circle class="tam2" cx="20" cy="15" r="5" />
         <circle class="flortam" cx="30" cy="10" r="5" />
       </svg> 
--->
-
-    <div>
-
-
+    -->
+  <!-- player Setting -->
+    <div class="player">
+      <div class="start"></div>
+      <div class="stop"></div>
+      <div class="rec"></div>
+      <div class="bpm">
+        <samp>BPM:</samp>
+        <input type="text">
+      </div>
+      <div class="patarn">
+        <samp>Patarn:</samp>
+        <select>
+          <option>4/4</option>
+          <option>3/4</option>
+          <option>8/8</option>
+        </select>
+      </div>
+      <div class="preset">
+        <samp>Patarn:</samp>
+        <select>
+          <option>Standert</option>
+          <option>Rock</option>
+          <option>Funk</option>
+        </select>
+      </div>
+    </div>
+  <!-- BeatBox -->
+    <div class="beatBox">
+      <div clase="beatCount">
+        <span>1</span>
+        <span>2</span>
+      </div>
+      <div class="hihatChannel">Hihat</div>
+      <div class="snareChannel">Snare</div>
+      <div class="bassChannel">Bass</div>
     </div>
   </main>
-
+<br>
+  <!-- footer -->
   <footer>
+    <h3 id="endTab">Digital Innovation Garage</h3>
+    <p id="creater">Product by Dr.Three</p>
     
   </footer>
 
-  </body>
+</body>
