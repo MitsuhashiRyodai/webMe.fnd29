@@ -38,6 +38,18 @@ function hihat(){
   console.log("clickHat");
 }
 
+function ride(){
+	// 初回以外だったら音声ファイルを巻き戻す
+  let ridePlay = document.getElementsByClassName("ridePlay")[0];
+	if( typeof( ridePlay.currentTime ) != 'undefined' )
+    {
+      ridePlay.currentTime = 0;
+    }
+
+  ridePlay.play();
+  console.log("clickRide");
+}
+
 function kick(){
 	// 初回以外だったら音声ファイルを巻き戻す
   let kickPlay = document.getElementsByClassName("kickPlay")[0];
