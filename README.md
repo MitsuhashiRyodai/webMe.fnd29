@@ -1,18 +1,11 @@
-# ページ構成
-* TopPage
-* BeatBox
-* DrumKit(未完成)
+# ページ構成（理想）
 
-## Top Page
+![pageLayout]( "pageLayout")
 
-* BeatBox
-* Drumkit
+## DrumSet
 
-## BeatBox
-
-* 欲しい機能
-
-8beatのみ2小説のループ
+### 欲しい機能
+* Drumをクリックもしくは、Keyイベントで演奏 
 音色は8個
 + クラッシュシンバル
 + ハイハット（クローズ）
@@ -22,6 +15,9 @@
 + Loタム
 + フロアタム
 + バスドラム
+
+### BeatBox
+8beatのみ2小説のループ
   
 特定の流せるマークした箇所のみ音が鳴る
 ループで再生
@@ -34,3 +30,4 @@
 
 ### 参考サイト
 * [Online drum machine](https://www.musicca.com/drum-machine?data=90-n-44-a--5acegikm6em7acdfgjk-5e "Online drum machine | MUSICCA")
+* [Virtual drums](https://www.musicca.com/drum-machine?data=90-n-44-a-12-3a5acegikmo6em7ai- "Virtual drum | MUSICCA")
