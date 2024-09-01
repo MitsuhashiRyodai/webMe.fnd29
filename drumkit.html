@@ -6,9 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
-  <script type="text/javascript" src="play.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
-  <title>webMe : </title>
+  <link href="drumkitStyle.css" rel="stylesheet" type="text/css" media="all">
+  <script type="text/javascript" src="drumPlay.js"></script>
+  <title>webMe : drumkit</title>
 </head>
 
   
@@ -20,7 +21,7 @@
       WebMe:趣味の部屋
     </h1>
     <!-- ナビゲーションバー -->
-    <nav>
+    <nav class="headerTab">
         <a href="index.html">Top</a>
         <a href="beatbox.html">beatBox</a>
         <a href="drumkit.html">DrumKit</a>
@@ -29,28 +30,64 @@
 
   <main>
     <div class="kit">
+      <a class="clach1" onclick="clash1();">clash1
+        <samp>press:w</samp>
+        <audio class="clash1Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_cymbal.mp3"></audio>
+      </a>
 
-        <div class="snare">Snare</div>
-        <div class="hitam">Hi-Tam</div>
-        <div class="lotam">Lo-Tam</div>
-        <div class="floor">Floor</div>
-        <div class="bass">Bass-Drum</div>
+      <a class="clach2" onclick="clash2();">clash2
+        <samp>press:o</samp>
+        <audio class="clash2Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_cymbal.mp3"></audio>
+      </a>
 
-        <div class="hihat">hihat</div>
-        <div class="clash1">clash 16</div>
-        <div class="clash2">clash 18</div>
-        <div class="ride">ride 22</div>
-    
+      <a class="hihat" onclick="hihat();">hihat
+        <samp>press:h</samp>
+        <audio class="hihatPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_hat.mp3"></audio>
+      </a>
+
+      <a class="kick" onclick="kick();">kick
+        <samp>press:space</samp>
+        <audio class="kickPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_kick.mp3"></audio>
+      </a>
+
+      <a class="snare" onclick="snare();">snare
+        <samp>press:f</samp>
+        <audio class="snarePlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_snare.mp3"></audio>
+      </a>
+
+      <a class="tom1" onclick="tom1();">tom1
+        <samp>press:t or y</samp>
+        <audio class="tom1Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom1.mp3"></audio>
+      </a>
+
+      <a class="tom2" onclick="tom2();">tom2
+        <samp>press:g or h</samp>
+        <audio class="tom2Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom2.mp3"></audio>
+      </a>
+
+      <a class="floor" onclick="floor();">floor
+        <samp>press:v or n</samp>
+        <audio class="floorPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom3.mp3"></audio>
+      </a>
+
+
+      
     </div>
 
     <!--別のやり方_svg要素  -->
-      <!-- <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle class="hat" cx="5" cy="10" r="5"  />
+<!--     
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <a onclick="hat();">      
+          <audio class="hat" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_hat.mp3"></audio>
+          <circle cx="5" cy="10" r="5"  />
+        </a>
+
         <circle class="snare" cx="10" cy="20" r="5" />
         <circle class="tam1" cx="15" cy="15" r="5" />
         <circle class="tam2" cx="20" cy="15" r="5" />
         <circle class="flortam" cx="30" cy="10" r="5" />
-      </svg> -->
+      </svg> 
+-->
 
     <div>
 
