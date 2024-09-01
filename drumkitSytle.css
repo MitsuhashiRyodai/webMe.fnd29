@@ -1,145 +1,138 @@
 /* default page style */
 
-/* header */
-.header{
-  margin: auto;
-  width: auto;
-  height: 50px;
-}
-
-#digLog{
-  width: 20px;
-  height: 20px;
-}
-
-/* .nav {
-  border-bottom: 1px #24140e ;
-} */
-
-
 #theme-color{
   background-color: #97cccc;
 }
-.headerTab{
-  background-color: #afeeee ;
-  border-bottom: 5px double #ceafed ;
-  margin: auto;
-  text-align: center;
-}
-
 
 /* DrumKitStyle */
 .drumKit{
   background-color: #fff2d7;
   margin: auto;
   border: 1px solid #3333334f;
-  width: auto;
-  height: 400px;
+  width: 800px;
+  height: 500px;
   text-align: center;
+  padding: 20px 35px;
 }
 
 /*SymbalColor*/
-.clash1 {
-  margin: auto;
+.symbal{
+  display: inline-block;
   background-color: #fff352;
   border-radius: 50%;
   border: 2px solid rgb(128, 112, 91);
-  top: 100px;
-  left: 100px;
   text-align: center;
+  
 }
 
-.clash2 {
-  margin: auto;
-  background-color: #fff352;
-  border-radius: 50%;
-  position: calc(100,100);
-  border: 2px solid rgb(128, 112, 91);
+#clash1 {
+  width: 80px;
+  height: 80px;
+}
 
-  text-align: center;
+#clash2 {
+  width: 80px;
+  height: 80px;
 }
 
 
-.hihat {
-  margin: auto;
-  background-color: #fff352;
-  border-radius: 50%;
-  position: calc(100,100);
-  border: 2px solid rgb(128, 112, 91);
-
-  text-align: center;
+#hihat {
+  width: 100px;
+  height: 100px;
 }
 
-.ride {
-  margin: auto;
-  background-color: #fff352;
-  border-radius: 50%;
-  position: calc(100,100);
-  border: 2px solid rgb(128, 112, 91);
-
-  text-align: center;
-}
+#ride {
+  width: 120px;
+  height: 120px;
+} 
 
 /*TaikoColor*/
-.snare {
+.taiko {
+  display: inline-block;
   background-color: #ddd8dc;
   border-radius: 50%;
   border: 2px solid #24140e;
-  padding: 20px;
+  padding: 2px;
   text-align: center;
 }
 
-.tom1 {
-  background-color: #ddd8dc;
-  border-radius: 50%;
-  border: 2px solid #24140e;
-  text-align: center;
+#snare {
+  width: 110px;
+  height: 110px;
+}
+
+
+#tom1 {
+  width: 90px;
+  height: 90px;
 
 }
 
-.tom2 {
-  background-color: #ddd8dc;
-  border-radius: 50%;
-  border: 2px solid #24140e;
-  text-align: center;
+#tom2 {
+  width: 100px;
+  height: 100px;
 }
 
-.floor {
-  background-color: #ddd8dc;
-  border-radius: 50%;
-  border: 2px solid #24140e;
-  text-align: center;
+#floor {
+  width: 115px;
+  height: 115px;
 }
 
-.kick {
-  background-color: #ddd8dc;
-  border-radius: 50%;
-  border: 2px solid #24140e;
-  text-align: center;
+#kick {
+  width: 110px;
+  height: 90px;
 }
 
 /* Player Setting */
 .player{
   margin: auto;
-  width: auto;
-  height: 10%;
+  width: 800px;
+  height: 20px;
+  display: flex;
+  padding: 20px 35px;
   display: flex;
 }
 
-.bpm {
+.start{
   width: 25px;
+}
+
+.stop{
+  width: 25px;
+}
+
+.rec{
+  width: 25px;
+}
+
+.bpm {
+  width: 50px;
   height: 10px;
 }
 
 /* BeatBox Style */
 .beatBox{
   margin: auto;
-  width: auto;
+  width: 800px;
   height: 400px;
   background-color: aliceblue;
   flex-flow:column ;
+  padding: 20px 35px;
 
 }
+.hihatCahnnel{
+  width: auto;
+}
+
+.noteBox {
+  display: inline-block;
+  border-radius: 2%;
+  border: 1px solid #24140e;
+  text-align: center;
+  width: auto;
+  height: 40px;
+}
+
 
 /* footter */
 .footer{
