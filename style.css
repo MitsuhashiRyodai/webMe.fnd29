@@ -5,7 +5,7 @@ body{
 
 
 /* header */
-h2{
+#topTiltle{
  background-color: #fff2d7;
  margin: auto;
  text-align: center;  
