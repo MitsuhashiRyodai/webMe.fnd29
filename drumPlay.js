@@ -222,13 +222,13 @@ function playBeat(num){
   num = 0;
   console.log(num);
   // console.log(num + 1 + "回目");
-  if (hihatBox[num].value === "1"){
+  if (hihatBox[num].value !== "0"){
       hihatBox[num].onclick();
   }
-  if (snareBox[num].value === "1"){
+  if (snareBox[num].value !== "0"){
     snareBox[num].onclick();
   }
-  if (bassBox[num].value === "1"){
+  if (bassBox[num].value !== "0"){
     bassBox[num].onclick();
   }
 
