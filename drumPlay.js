@@ -270,7 +270,7 @@ function stopBeat(){
 
 let startBtn = document.getElementById("start");
 let stopBtn  = document.getElementById("stop");
-startBtn.addEventListener("click", playLoop,false);
+startBtn.addEventListener("click", playLoop);
 stopBtn.addEventListener("click", stopBeat,false);
 
 // noteOn/Off
