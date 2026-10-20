@@ -1,27 +1,25 @@
 # ページ構成（理想）
+clickBox用のテストページ
+四角の配列でクリックしたら音が出る仕組み
+→DBのフラグを見て音を出す仕組み、もしくは、APIから叩いてもらうことはできないか？
 
-![pageLayout](https://github.com/MitsuhashiRyodai/webMe.fnd29/blob/main/pageLayoutDrumSet.jpg "pageLayout")
+![pageLayout](ScreenImage_threeColor.jpg "pageLayout")
 
 ## DrumSet
 
 ### 欲しい機能
 * Drumをクリックもしくは、Keyイベントで演奏 
-音色は8個
-+ クラッシュシンバル
-+ ハイハット（クローズ）
-+ ライドシンバル
+Boxは３色
++ 赤：クラッシュシンバル
++ 黄：ライドシンバル
++ 緑：スネア
+
+
 + スネア
 + Hiタム
 + Loタム
 + フロアタム
 + バスドラム
-
-### BeatBox
-8beatのみ2小説のループ
-  
-特定の流せるマークした箇所のみ音が鳴る
-ループで再生
-速度変更可能
 
 *****
 
