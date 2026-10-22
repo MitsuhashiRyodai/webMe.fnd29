@@ -23,26 +23,45 @@
     </span>
     <div>
       <span class="digName">
-        Digital
-        <br>Innovation
-        <br>Garage
+       clickSoundBox
       </span>
     </div>
     <div>
-    <span><h2>WebApp:Drum-Kit</h2></span>
+    <span><h2>clientWebApp:html+Javascript</h2></span>
     </div>
   </header>  
   <br>
   <!-- ナビゲーションバー -->
   <nav class="navigation">
-      <a href="index.html">Top</a>
-      <!-- <a href="beatbox.html">beatBox</a> -->
-      <a href="drumkit.html">DrumKit</a>
+    <a href="">Link1</a>
+    <a href="">Link2</a>
+    <a href="">Link3</a>
+    <a href="">Link4</a>
   </nav>
   <br>
   <main>
-    <!-- DrumKit -->
-    <div class="drumKit">
+
+    <!-- demo:Box sound-->
+   <div class="soundBoxSpace">
+      <a class="clickSoundBox" id="warningBox" onclick="clash1();">Warning
+        <br><samp>press:r</samp>
+        <audio class="clash1Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_cymbal.mp3"></audio>
+      </a>
+      <a class="clickSoundBox" id="cautionBox" onclick="clash1();">Caution
+        <br><samp>press:h</samp>
+        <audio class="hihatPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_hat.mp3"></audio>
+      </a>
+      <a class="clickSoundBox" id="activeBox" onclick="clash1();">ctive
+        <br><samp>press:g or k</samp>
+        <audio class="tom2Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom2.mp3"></audio>
+      </a>
+
+
+   </div>
+
+
+    <!-- colorBox --> 
+    <!-- <div class="drumKit">
       <a class="symbal" id="clash1" onclick="clash1();">clash1
         <br><samp>press:r</samp>
         <audio class="clash1Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_cymbal.mp3"></audio>
@@ -90,7 +109,7 @@
         <audio class="floorPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom3.mp3"></audio>
       </a>
       
-    </div>
+    </div> -->
 
     <!--別のやり方_svg要素  -->
     <!--     
@@ -137,7 +156,7 @@
       </div>
     </div>
   <!-- BeatBox -->
-    <div class="beatBox">
+    <!-- <div class="beatBox">
       <br>
       <div class="beatCount" id="hihatChannel">
         <span id="hihatName">
@@ -210,12 +229,12 @@
         </span>
 
       </div>
-    </div>
+    </div> -->
   </main>
 <p border:1px>
   <!-- footer -->
   <footer>
-    <h3 id="endTab">Digital Innovation Garage</h3>
+    <h3 id="endTab">Test SoundBox for *****</h3>
     <p id="creater">Product by Dr.Three</p>
     
   </footer>

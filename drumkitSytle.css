@@ -1,4 +1,43 @@
 
+
+/* SoundBoxSpace Style */
+.soundBoxSpace{
+  background-color: #1a1355;
+  margin: auto;
+  border: 1px solid #f1eded4f;
+  width: 800px;
+  height: 220px;
+  text-align: center;
+  padding: 20px 35px;
+}
+
+
+/*demo:soundBox*/
+.clickSoundBox{
+ display:inline-block;
+ background-color: #dfece5;
+ width: 100px;
+ height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  padding: auto;
+}
+
+#warningBox:active {
+ background-color: #e97672;
+
+}
+
+#cautionBox:active {
+ background-color: #f1ef5a;
+
+}
+
+#activeBox:active {
+ background-color: #11c74e;
+
+}
+
 /* DrumKitStyle */
 .drumKit{
   background-color: #fff2d7;
@@ -13,7 +52,7 @@
 /*SymbalColor*/
 .symbal{
   display: inline-block;
-  background-color: #fff352;
+  background-color: #f9fc55;
   /* background-color: #6663377c; */
   border-radius: 50%;
   border: 2px solid rgb(128, 112, 91);
@@ -26,7 +65,7 @@
   background-color: #6663377c;
 }
 
-#clash1 {
+#clash1{
   width: 105px;
   height: 105px;
   left: 100px;
