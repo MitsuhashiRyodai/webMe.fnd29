@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#000000">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link href="drumkitSytle.css" rel="stylesheet" type="text/css" media="all">
-  <script type="text/javascript" src="drumPlay.js"></script>
-  <title>webMe : drumkit</title>
+  <script type="text/javascript" src="connectionDb.js"></script>
+  <title>webMe : soundBoxKitSignal</title>
 </head>
 
   
@@ -43,193 +43,18 @@
 
     <!-- demo:Box sound-->
    <div class="soundBoxSpace">
-      <a class="clickSoundBox" id="warningBox" onclick="clash1();">Warning
-        <br><samp>press:r</samp>
-        <audio class="clash1Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_cymbal.mp3"></audio>
-      </a>
-      <a class="clickSoundBox" id="cautionBox" onclick="hihat();">Caution
-        <br><samp>press:h</samp>
-        <audio class="hihatPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_hat.mp3"></audio>
-      </a>
-      <a class="clickSoundBox" id="activeBox" onclick="tom2();">ctive
-        <br><samp>press:g or k</samp>
-        <audio class="tom2Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom2.mp3"></audio>
-      </a>
+      <table>
+        <tbody>
+          <tr>
+            
+          </tr>
+        </tbody>
+      </table>
 
 
    </div>
 
 
-    <!-- colorBox --> 
-    <!-- <div class="drumKit">
-      <a class="symbal" id="clash1" onclick="clash1();">clash1
-        <br><samp>press:r</samp>
-        <audio class="clash1Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_cymbal.mp3"></audio>
-      </a>
-
-      <a  class="symbal" id="clash2" onclick="clash2();">clash2
-        <br><samp>press:o</samp>
-        <audio class="clash2Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_cymbal.mp3"></audio>
-      </a>
-    <p></p>
-      <a  class="symbal" id="hihat" onclick="hihat();">hihat
-        <br><samp>press:h</samp>
-        <audio class="hihatPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_hat.mp3"></audio>
-      </a>
-
-      <a  class="taiko" id="tom1" onclick="tom1();">tom1
-        <br><samp>press:t or u</samp>
-        <audio class="tom1Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom1.mp3"></audio>
-      </a>
-
-      <a class="taiko" id="tom2" onclick="tom2();">tom2
-        <br><samp>press:g or k</samp>
-        <audio class="tom2Play" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom2.mp3"></audio>
-      </a>
-      
-      <a class="symbal" id="ride" onclick="ride();">ride
-        <br><samp>press:i</samp>
-        <audio class="ridePlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_ride.mp3"></audio>
-      </a>
-
-    <p></p>   
-      
-      <a class="taiko" id="snare" onclick="snare();">snare
-        <br><samp>press:f or j</samp>
-        <audio class="snarePlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_snare.mp3"></audio>
-      </a>
-
-      <a class="taiko" id="kick" onclick="kick();">Bass
-        <br><samp>press:e</samp>
-        <audio class="kickPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_kick.mp3"></audio>
-      </a>
-
-      <a class="taiko" id="floor" onclick="floor();">floor
-        <br><samp>press:b or m</samp>
-        <audio class="floorPlay" preload="auto" type="audio/mp3" src="maou_se_inst_drum1_tom3.mp3"></audio>
-      </a>
-      
-    </div> -->
-
-    <!--別のやり方_svg要素  -->
-    <!--     
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <a onclick="hat();">      
-          <audio class="hat" preload="auto" type="audio/mp3" src="maou_se_inst_drum2_hat.mp3"></audio>
-          <circle cx="5" cy="10" r="5"  />
-        </a>
-
-        <circle class="snare" cx="10" cy="20" r="5" />
-        <circle class="tom1" cx="15" cy="15" r="5" />
-        <circle class="tom2" cx="20" cy="15" r="5" />
-        <circle class="flortam" cx="30" cy="10" r="5" />
-      </svg> 
-    -->
-  <!-- player Setting -->
-    <div class="player">
-      <div class="btn">
-        <button id="start" type="button" onclick="playBeat();"><span>▶<img href="start.pamg"></span></button>
-        <button id="stop" type="button">■</button>
-        <button id="rec" type="button">●</button>
-      </div>
-      <div id="bpm">
-        <span>
-          <span><samp>BPM:</samp></span>
-          <input id="tempo" type="text" width="50px" height="25px" value="90">
-        </span>
-      </div>
-      <div class="rhythm">
-        <span><samp>rhythm:</samp></span>
-        <select class="rhythmNumber">
-          <option value="1">4/4</option>
-          <option value="2">3/4</option>
-          <option value="3">8/8</option>
-        </select>
-      </div>
-      <div class="preset">
-        <span><samp>Patarn:</samp></span>
-        <select class="presetMode">
-          <option>Standert</option>
-          <option>Rock</option>
-          <option>Funk</option>
-        </select>
-      </div>
-    </div>
-  <!-- BeatBox -->
-    <!-- <div class="beatBox">
-      <br>
-      <div class="beatCount" id="hihatChannel">
-        <span id="hihatName">
-          Hihat:
-          <div class="hihatNote">
-            <input type="text" class="noteBox" name="hihatNote" id="hi0" onclick="hihat();" count="0" value="1">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi1" onclick="hihat();" count="1" value="0">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi2" onclick="hihat();" count="2" value="1">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi3" onclick="hihat();" count="3" value="0">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi4" onclick="hihat();" count="4" value="2">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi5" onclick="hihat();" count="5" value="0">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi6" onclick="hihat();" count="6" value="1">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi7" onclick="hihat();" count="7" value="0">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi8" onclick="hihat();" count="0" value="3">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi9" onclick="hihat();" count="1" value="0">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi10" onclick="hihat();" count="2" value="1">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi11" onclick="hihat();" count="3" value="0">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi12" onclick="hihat();" count="4" value="4">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi13" onclick="hihat();" count="5" value="0">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi14" onclick="hihat();" count="6" value="1">
-            <input type="text"  class="noteBox" name="hihatNote" id="hi15" onclick="hihat();" count="7" value="0">
-          </div>
-        </span>
-      </div>
-
-      <br><div class="beatCount" id="snareChannel">
-        <span id="snareName">
-          Snare:
-          <div class="snareNote">
-            <input type="text" class="noteBox" name="snareNote" id="Sn0" onclick="snare();" count="0" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn1" onclick="snare();" count="1" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn2" onclick="snare();" count="2" value="1">
-            <input type="text" class="noteBox" name="snareNote" id="Sn3" onclick="snare();" count="3" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn4" onclick="snare();" count="4" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn5" onclick="snare();" count="5" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn6" onclick="snare();" count="6" value="1">
-            <input type="text" class="noteBox" name="snareNote" id="Sn7" onclick="snare();" count="7" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn8" onclick="snare();" count="0" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn9" onclick="snare();" count="1" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn10" onclick="snare();" count="2" value="1">
-            <input type="text" class="noteBox" name="snareNote" id="Sn11" onclick="snare();" count="3" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn12" onclick="snare();" count="4" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn13" onclick="snare();" count="5" value="0">
-            <input type="text" class="noteBox" name="snareNote" id="Sn14" onclick="snare();" count="6" value="1">
-            <input type="text" class="noteBox" name="snareNote" id="Sn15" onclick="snare();" count="7" value="0">
-          </div>
-        </span>
-      </div>
-      <br><div class="beatCount" id="bassChannel">
-        <span id="bassName">
-          Bass:
-          <div class="bassNote"></div>
-            <input type="text" class="noteBox" name="bassNote" id="ba0" onclick="kick();" count="0" value="1">
-            <input type="text" class="noteBox" name="bassNote" id="ba1" onclick="kick();" count="1" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba2" onclick="kick();" count="2" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba3" onclick="kick();" count="3" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba4" onclick="kick();" count="4" value="2">
-            <input type="text" class="noteBox" name="bassNote" id="ba5" onclick="kick();" count="5" value="1">
-            <input type="text" class="noteBox" name="bassNote" id="ba6" onclick="kick();" count="6" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba7" onclick="kick();" count="7" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba8" onclick="kick();" count="0" value="3">
-            <input type="text" class="noteBox" name="bassNote" id="ba9" onclick="kick();" count="1" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba10" onclick="kick();" count="2" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba11" onclick="kick();" count="3" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba12" onclick="kick();" count="4" value="4">
-            <input type="text" class="noteBox" name="bassNote" id="ba13" onclick="kick();" count="5" value="1">
-            <input type="text" class="noteBox" name="bassNote" id="ba14" onclick="kick();" count="6" value="0">
-            <input type="text" class="noteBox" name="bassNote" id="ba15" onclick="kick();" count="7" value="0">
-      </div>
-        </span>
-
-      </div>
-    </div> -->
   </main>
 <p border:1px>
   <!-- footer -->

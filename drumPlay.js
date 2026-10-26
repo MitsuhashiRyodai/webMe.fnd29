@@ -121,13 +121,13 @@ function floor(){
 
 
 let durmKey =document.addEventListener("keydown", (event) => {  
-  const symbalColor ="#fff352";
-  const attackColor ="#6663377c";
-  const taikoColor ="#f0f1dc";
+  // const symbalColor ="#fff352";
+  // const attackColor ="#6663377c";
+  // const taikoColor ="#f0f1dc";
   let clash1Style =document.getElementsByClassName("symbal")[0].style.backgroundColor ;
-  let clash2Style =document.getElementsByClassName("symbal")[1].style.backgroundColor ;
+  // let clash2Style =document.getElementsByClassName("symbal")[1].style.backgroundColor ;
   let hihatStyle =document.getElementsByClassName("symbal")[2].style.backgroundColor ;
-  let rideStyle =document.getElementsByClassName("symbal")[3].style.backgroundColor ;
+  // let rideStyle =document.getElementsByClassName("symbal")[3].style.backgroundColor ;
 
   switch (event.key){
     case "h":
