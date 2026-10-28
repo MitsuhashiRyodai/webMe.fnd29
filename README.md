@@ -5,14 +5,15 @@ clickBox用のテストページ
 
 ![pageLayout](ScreenImage_threeColor.jpg "pageLayout")
 
-## DrumSet
+## SoundBoxSet
 
 ### 欲しい機能
+#### 1page - 描画 
 * Drumをクリックもしくは、Keyイベントで演奏 
 Boxは３色
 + 赤：クラッシュシンバル
-+ 黄：ライドシンバル
-+ 緑：スネア
++ 黄：ハイハット
++ 緑：タム
 
 
 + スネア
@@ -22,6 +23,11 @@ Boxは３色
 + バスドラム
 
 *****
+#### 2page - 状態確認
+
+* 設定名称一覧
+
+
 
 ### 利用音源
 * soundNoteの音源：[魔王魂](https://maou.audio/category/se/se-inst/page/4/ "楽器音 _ フリー効果音無料ダウンロード 魔王魂.html")
