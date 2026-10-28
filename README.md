@@ -22,12 +22,12 @@ Boxは３色
 + フロアタム
 + バスドラム
 
-*****
 #### 2page - 状態確認
 
 * 設定名称一覧
 
 
+*****
 
 ### 利用音源
 * soundNoteの音源：[魔王魂](https://maou.audio/category/se/se-inst/page/4/ "楽器音 _ フリー効果音無料ダウンロード 魔王魂.html")
