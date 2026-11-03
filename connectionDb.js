@@ -20,6 +20,23 @@ const pool = new Pool({
     password: process.env.DB_PASSWORD
 });
 
+// select処理
+function selectRecodeStatus(){
+ 
+}
+
+// insert処理
+function insertRecode(){
+
+}
+
+// update処理
+function updateRecode(){
+
+}
+
+
+
 /**
  * キーボード入力での音声再生
  */
