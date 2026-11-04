@@ -20,18 +20,24 @@ const pool = new Pool({
     password: process.env.DB_PASSWORD
 });
 
+app.use(express.static("public"));;
+
 // select処理
-function selectRecodeStatus(){
+async function selectRecodeStatus(){
  
 }
 
+app.get("", async())=>{
+
+}
+
 // insert処理
-function insertRecode(){
+async function insertRecode(){
 
 }
 
 // update処理
-function updateRecode(){
+async function updateRecode(){
 
 }
 
